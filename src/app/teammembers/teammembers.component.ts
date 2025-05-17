@@ -7,27 +7,72 @@ import { Component } from '@angular/core';
 })
 export class TeammembersComponent {
   teamMembers = [
-    {
-      id: 1,
-      name: 'Dr. Sarah Johnson',
-      role: 'Lead Developer',
-      description: 'Full-stack developer with 10+ years experience in AR/VR technologies.',
-      imageUrl: 'assets/images/team/sarah.jpg',
-      socialLinks: {
-        linkedin: '#',
-        twitter: '#'
-      }
-    },
-    {
-      id: 2,
-      name: 'Michael Chen',
-      role: '3D Artist',
-      description: 'Specializes in 3D modeling and animation for immersive experiences.',
-      imageUrl: 'assets/images/team/michael.jpg',
-      socialLinks: {
-        linkedin: '#',
-        twitter: '#'
-      }
-    },
-  ];
+  {
+    id: 1,
+    name: 'Shikhali Vyas',
+    role: 'Sprint 2 Scrum Master',
+    description: 'Expert in Agile methodologies and team coordination, ensuring smooth sprint execution and timely delivery of project milestones.',
+    imageUrl: 'assets/images/team/shikhali.png',
+    socialLinks: {
+      linkedin: '#',
+      twitter: '#'
+    }
+  },
+  {
+    id: 2,
+    name: 'Jaydeep Bhalodiya',
+    role: 'Master of Cyber Security',
+    description: 'Specialist in securing digital infrastructures with a focus on penetration testing, network defense, and data protection strategies.',
+    imageUrl: 'assets/images/team/jaydeepimgpng.png',
+    socialLinks: {
+      linkedin: '#',
+      twitter: '#'
+    }
+  },
+  {
+    id: 3,
+    name: 'Manpreet Kaur',
+    role: 'Master of IT',
+    description: 'Proficient in software development and IT systems integration, ensuring scalable and reliable tech solutions across platforms.',
+    imageUrl: 'assets/images/team/manpreetimg.png',
+    socialLinks: {
+      linkedin: '#',
+      twitter: '#'
+    }
+  },
+  {
+    id: 4,
+    name: 'Seshivardhan Goud',
+    role: 'Master of Cyber Security',
+    description: 'Focused on ethical hacking, risk assessment, and creating robust defense mechanisms against modern cybersecurity threats.',
+    imageUrl: 'assets/images/team/seshiverdhanimg.png',
+    socialLinks: {
+      linkedin: '#',
+      twitter: '#'
+    }
+  },
+  {
+    id: 5,
+    name: 'Anmol Aslaliya',
+    role: 'Master of Cyber Security',
+    description: 'Dedicated to developing secure systems and analyzing vulnerabilities to fortify applications and infrastructure against breaches.',
+    imageUrl: 'assets/images/team/Anmolimg.png',
+    socialLinks: {
+      linkedin: '#',
+      twitter: '#'
+    }
+  },
+  {
+    id: 6,
+    name: 'Balasowjanya Bhogadhi',
+    role: 'Master of Cyber Security',
+    description: 'Cybersecurity analyst with a strong grasp on cryptographic systems, malware analysis, and compliance management.',
+    imageUrl: 'assets/images/team/balasoniyaimg.png',
+    socialLinks: {
+      linkedin: '#',
+      twitter: '#'
+    }
+  }
+];
+
 }

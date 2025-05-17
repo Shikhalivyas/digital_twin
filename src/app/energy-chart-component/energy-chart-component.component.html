@@ -1,0 +1,24 @@
+<div class="chart-container">
+    <app-utility-chart
+      [labels]="labels"
+      [data]="electricityData"
+      label="Electricity (kWh)"
+      color="blue">
+    </app-utility-chart>
+ </div>
+  <div class="chart-container">
+    <app-utility-chart
+      [labels]="labels" 
+      [data]="gasData"
+      label="Gas (m³)"
+      color="green">
+    </app-utility-chart>
+  </div>
+  <div class="chart-container">
+    <app-utility-chart
+      [labels]="labels"
+      [data]="waterData"
+      label="Water (Liters)"
+      color="orange">
+    </app-utility-chart>
+  </div>

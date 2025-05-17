@@ -1,0 +1,17 @@
+.chart-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.chart-controls select,
+.chart-controls button {
+  margin-left: 0.5rem;
+}
