@@ -19,6 +19,9 @@ import { NgChartsModule } from 'ng2-charts';
 import { EnergyChartComponent } from './energy-chart-component/energy-chart-component.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UtilityChartComponent } from './utility-chart/utility-chart.component';
+import { EngviewComponent } from './engview/engview.component';
+import { GasviewComponent } from './gasview/gasview.component';
+import { WatterviewComponent } from './watterview/watterview.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { UtilityChartComponent } from './utility-chart/utility-chart.component';
     ModelViewerComponent,
     TeammembersComponent,
     EnergyChartComponent,
-    UtilityChartComponent
+    UtilityChartComponent,
+    EngviewComponent,
+    GasviewComponent,
+    WatterviewComponent
   ],
  imports: [
   BrowserModule,              // KEEP this

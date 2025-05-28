@@ -10,7 +10,7 @@ export class TeammembersComponent {
   {
     id: 1,
     name: 'Shikhali Vyas',
-    role: 'Sprint 2 Scrum Master',
+    role: 'Master of Cyber security',
     description: 'Expert in Agile methodologies and team coordination, ensuring smooth sprint execution and timely delivery of project milestones.',
     imageUrl: 'assets/images/team/shikhali.png',
     socialLinks: {

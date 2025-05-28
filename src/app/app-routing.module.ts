@@ -5,6 +5,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { TeammembersComponent } from './teammembers/teammembers.component';
 import { EnergyChartComponent } from './energy-chart-component/energy-chart-component.component';
+import { EngviewComponent } from './engview/engview.component';
+import { GasviewComponent } from './gasview/gasview.component';
+import { WatterviewComponent } from './watterview/watterview.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +15,9 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path:'team',component:TeammembersComponent},
   {path: 'graph', component:EnergyChartComponent},
+  {path: 'enrgy-graph', component:EngviewComponent},
+  {path: 'gas-graph', component:GasviewComponent},
+  {path: 'water-graph', component:WatterviewComponent},
 ];
 
 @NgModule({
