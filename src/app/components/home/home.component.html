@@ -4,16 +4,45 @@
   <h2 class="text-4xl font-bold mb-4">Welcome to Latrobe University</h2>
   <p class="max-w-2xl mx-auto text-gray-700">Empowering students to become global leaders through innovation and excellence.</p>
 </section> -->
- <div class="container">
+ <!-- <div class="container">
     <div class="title-box mx-auto" style="text-align: center;font-size: large ;">
       <h1>Jenny Grace Building</h1>
     </div>
-  </div>
-<app-energy-chart-component></app-energy-chart-component>
+  </div> -->
+<!-- <app-energy-chart-component></app-energy-chart-component> -->
 <section class="py-16" style="background: linear-gradient(45deg, black, transparent);">
   <!-- <div class="text-center mb-10">
     <h2 class="text-3xl font-bold">Explore</h2>
   </div> -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-10" >
+  
+    <app-utility-chart
+      [labels]="labelsMay"
+      [data]="electricityDataMay"
+      label="Electricity (kWh)"
+      color="blue"
+      [displayViewBtn]="true"
+      [redirectUrl]="'enrgy-graph'">
+    </app-utility-chart>
+
+    <app-utility-chart
+      [labels]="labelsMay"
+      [data]="gasDataMay"
+      label="Gas (m³)"
+      color="green"
+      [displayViewBtn]="true"
+      [redirectUrl]="'gas-graph'">
+    </app-utility-chart>
+    <app-utility-chart
+      [labels]="labelsMay"
+      [data]="waterDataMay"
+      label="Water (Liters)"
+      color="orange"
+      [displayViewBtn]="true"
+      [redirectUrl]="'water-graph'">
+    </app-utility-chart>
+ 
+ </div>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-10" >
      <ng-container *ngFor="let tech of technologies">
       <app-card [title]="tech.title" [description]="tech.description" [imagePath]="tech.image"></app-card>

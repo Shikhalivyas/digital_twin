@@ -2,6 +2,7 @@ import { Component, Input, ViewChild, OnChanges, SimpleChanges } from '@angular/
 import { ChartConfiguration, ChartType, Chart } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 import jsPDF from 'jspdf';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-utility-chart',
@@ -15,9 +16,19 @@ export class UtilityChartComponent implements OnChanges {
   @Input() data: number[] = [];
   @Input() label: string = '';
   @Input() color: string = 'blue';
+  @Input() displayViewBtn:boolean=false;
+  @Input() redirectUrl:string='';  
 
   chartType: ChartType = 'line'; // Default
   chartData: ChartConfiguration['data'] = { labels: [], datasets: [] };
+
+  constructor(public router: Router) {}
+    
+  gotoRedirect() {
+    if (this.redirectUrl) {
+      this.router.navigate([this.redirectUrl]);
+    } 
+  }
 
   ngOnChanges(changes: SimpleChanges) {
     this.updateChart();
