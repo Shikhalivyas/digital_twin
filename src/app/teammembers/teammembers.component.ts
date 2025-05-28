@@ -32,7 +32,7 @@ export class TeammembersComponent {
   {
     id: 3,
     name: 'Manpreet Kaur',
-    role: 'Master of IT',
+    role: 'Master of Cyber Security',
     description: 'Proficient in software development and IT systems integration, ensuring scalable and reliable tech solutions across platforms.',
     imageUrl: 'assets/images/team/manpreetimg.png',
     socialLinks: {
